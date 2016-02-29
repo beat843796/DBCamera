@@ -230,11 +230,11 @@
 
 - (void) rotationChanged:(UIDeviceOrientation) orientation
 {
-    if ( orientation != UIDeviceOrientationUnknown ||
-         orientation != UIDeviceOrientationFaceUp ||
-         orientation != UIDeviceOrientationFaceDown ) {
-        _deviceOrientation = orientation;
-    }
+//    if ( orientation != UIDeviceOrientationUnknown ||
+//         orientation != UIDeviceOrientationFaceUp ||
+//         orientation != UIDeviceOrientationFaceDown ) {
+//        _deviceOrientation = orientation;
+//    }
 }
 
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator

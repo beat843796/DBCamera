@@ -409,6 +409,7 @@
 				9AB5979D189BAF9A001BCAD3 /* Frameworks */,
 				9AB5979E189BAF9A001BCAD3 /* Resources */,
 				E9BB28F5DC0B461A8AA01285 /* Copy Pods Resources */,
+				F611B93D9E91AC0FFCBFB281 /* Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -507,6 +508,21 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBCamera/Pods-DBCamera-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F611B93D9E91AC0FFCBFB281 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DBCamera/Pods-DBCamera-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
