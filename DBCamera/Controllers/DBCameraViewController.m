@@ -63,7 +63,7 @@
 
     if ( self ) {
         _processingPhoto = NO;
-        _deviceOrientation = UIDeviceOrientationPortrait;
+        _deviceOrientation = self.interfaceOrientation;
         if ( delegate )
             _delegate = delegate;
 
@@ -145,7 +145,7 @@
 }
 
 - (NSUInteger)supportedInterfaceOrientations {
-    return UIInterfaceOrientationMaskPortrait | UIInterfaceOrientationMaskPortraitUpsideDown;
+    return UIInterfaceOrientationMaskAll;
 }
 
 - (UIInterfaceOrientation)preferredInterfaceOrientationForPresentation {
@@ -230,11 +230,11 @@
 
 - (void) rotationChanged:(UIDeviceOrientation) orientation
 {
-//    if ( orientation != UIDeviceOrientationUnknown ||
-//         orientation != UIDeviceOrientationFaceUp ||
-//         orientation != UIDeviceOrientationFaceDown ) {
-//        _deviceOrientation = orientation;
-//    }
+    if ( orientation != UIDeviceOrientationUnknown ||
+         orientation != UIDeviceOrientationFaceUp ||
+         orientation != UIDeviceOrientationFaceDown ) {
+        _deviceOrientation = orientation;
+    }
 }
 
 - (void)viewWillTransitionToSize:(CGSize)size withTransitionCoordinator:(id<UIViewControllerTransitionCoordinator>)coordinator
