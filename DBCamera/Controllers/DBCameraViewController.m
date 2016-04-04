@@ -63,7 +63,7 @@
 
     if ( self ) {
         _processingPhoto = NO;
-        _deviceOrientation = self.interfaceOrientation;
+        _deviceOrientation = [[UIDevice currentDevice] orientation];
         if ( delegate )
             _delegate = delegate;
 
@@ -144,7 +144,7 @@
     _cameraManager = nil;
 }
 
-- (NSUInteger)supportedInterfaceOrientations {
+- (UIInterfaceOrientationMask)supportedInterfaceOrientations {
     return UIInterfaceOrientationMaskAll;
 }
 
